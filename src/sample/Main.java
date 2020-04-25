@@ -61,4 +61,31 @@ public class Main extends Application
             }
             lbl.setText(Integer.toString(iCounter));
         }
+
+        /*
+         *Also a viable method, to handle the events
+         *By  creating an inner class as shown
+         *Remember, to do this you have to remove the implements method from the main class
+
+        private class ClickHandle
+            implements EventHandler <ActionEvent>
+            {
+              @Override public void handle (ActionEvent e)
+                {
+                    if {e.getSource() == btnAdd)
+                    * {
+                    *   iCounter++;
+                    * }
+                    * else
+                    *   {
+                    *       if {e.getSource() == btnSubtract)
+                    *           {
+                    *               iCounter--;
+                    *            }
+                    *       }
+                    * lbl.setText(Integer.toString(iCounter));
+                    }
+            }
+
+         */
     }
